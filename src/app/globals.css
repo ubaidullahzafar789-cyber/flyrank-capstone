@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f7f5;
+  --foreground: #1b2923;
+  --muted: #627169;
+  --border: #dce5df;
+  --accent: #176b52;
+  --accent-hover: #10543f;
+  --surface: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-container {
+  width: min(100% - 2rem, 68rem);
+  margin-inline: auto;
+}
+
+.nav-link {
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  background: #e8f1eb;
+  color: var(--accent);
+  outline: none;
+}
+
+.surface {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgb(27 41 35 / 4%);
+}
+
+.button-primary {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(--accent);
+  padding: 0.625rem 1rem;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 150ms ease;
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: var(--accent-hover);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
