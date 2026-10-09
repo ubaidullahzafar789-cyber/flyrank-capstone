@@ -1,6 +1,11 @@
 # FlyRank Capstone
 
+
 A Next.js foundation for the FlyRank capstone project. It uses the App Router, JavaScript, and Tailwind CSS. Pages are Server Components by default; add a Client Component only when browser-side interactivity is needed.
+
+# Live Demo 
+
+https://flyrank-capstone-i2mtl3e6e-study-mate-ai-team.vercel.app
 
 ## Routes
 
